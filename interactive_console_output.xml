@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231220 01:37:23.879" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Vivi Sukristiana\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Browser">
+<arg>${url_webtest}</arg>
+<arg>${browser}</arg>
+<msg timestamp="20231220 01:37:26.272" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20231220 01:37:26.272" endtime="20231220 01:37:26.273"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20231220 01:37:26.276" endtime="20231220 01:37:26.276"/>
+</kw>
+<kw name="Click Button">
+<arg>xpath://*[@id="login-button"]/button</arg>
+<status status="NOT RUN" starttime="20231220 01:37:26.277" endtime="20231220 01:37:26.277"/>
+</kw>
+<kw name="Input Text">
+<arg>id=mat-input-0</arg>
+<arg>${username}</arg>
+<status status="NOT RUN" starttime="20231220 01:37:26.277" endtime="20231220 01:37:26.277"/>
+</kw>
+<kw name="Input Password">
+<arg>id=mat-input-1</arg>
+<arg>${pass}</arg>
+<status status="NOT RUN" starttime="20231220 01:37:26.291" endtime="20231220 01:37:26.291"/>
+</kw>
+<kw name="Click Button">
+<arg>xpath://*[@id="login-area"]/form/button</arg>
+<status status="NOT RUN" starttime="20231220 01:37:26.293" endtime="20231220 01:37:26.293"/>
+</kw>
+<status status="PASS" starttime="20231220 01:37:23.959" endtime="20231220 01:37:27.297"/>
+</kw>
+<status status="PASS" starttime="20231220 01:37:23.958" endtime="20231220 01:37:27.297"/>
+</test>
+<status status="PASS" starttime="20231220 01:37:23.884" endtime="20231220 01:37:27.299"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

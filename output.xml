@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231223 10:56:28.211" rpa="false" schemaversion="4">
+<suite id="s1" name="Test1" source="F:\TugasKuliah\semester 7\UAS-TESTING\test1.robot">
+<test id="s1-t1" name="Pengetesan Login" line="14">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_webtest}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 10:56:28.784" level="INFO">Opening browser 'chrome' to base url 'https://www.gramedia.com'.</msg>
+<status status="PASS" starttime="20231223 10:56:28.784" endtime="20231223 10:56:40.821"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231223 10:56:40.821" endtime="20231223 10:56:41.054"/>
+</kw>
+<kw name="Get Action Chain Delay" library="SeleniumLibrary">
+<doc>Gets the currently stored value for chain_delay_value in timestr format.</doc>
+<status status="PASS" starttime="20231223 10:56:41.054" endtime="20231223 10:56:41.062"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="login-button"]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231223 10:56:41.062" level="INFO">Clicking button 'xpath://*[@id="login-button"]/button'.</msg>
+<status status="PASS" starttime="20231223 10:56:41.062" endtime="20231223 10:56:41.619"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=mat-input-0</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 10:56:41.619" level="INFO">Typing text 'putri@gmail.com' into text field 'id=mat-input-0'.</msg>
+<status status="PASS" starttime="20231223 10:56:41.619" endtime="20231223 10:56:43.395"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=mat-input-1</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 10:56:43.403" level="INFO">Typing password into text field 'id=mat-input-1'.</msg>
+<msg timestamp="20231223 10:56:43.559" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231223 10:56:43.877" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231223 10:56:43.395" endtime="20231223 10:56:43.877"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="login-area"]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231223 10:56:43.879" level="INFO">Clicking button 'xpath://*[@id="login-area"]/form/button'.</msg>
+<status status="PASS" starttime="20231223 10:56:43.879" endtime="20231223 10:56:44.176"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id=account-button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231223 10:56:44.176" endtime="20231223 10:56:47.119"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>title=Putri</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231223 10:56:47.119" level="INFO">Clicking element 'title=Putri'.</msg>
+<msg timestamp="20231223 10:56:47.514" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231223 10:56:47.514" level="FAIL">Element with locator 'title=Putri' not found.</msg>
+<status status="FAIL" starttime="20231223 10:56:47.119" endtime="20231223 10:56:47.523"/>
+</kw>
+<status status="FAIL" starttime="20231223 10:56:28.784" endtime="20231223 10:56:47.523">Element with locator 'title=Putri' not found.</status>
+</test>
+<status status="FAIL" starttime="20231223 10:56:28.211" endtime="20231223 10:56:47.523"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
