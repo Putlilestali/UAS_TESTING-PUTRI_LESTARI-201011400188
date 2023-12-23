@@ -1,75 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231223 10:56:28.211" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231223 18:00:37.689" rpa="false" schemaversion="4">
 <suite id="s1" name="Test1" source="F:\TugasKuliah\semester 7\UAS-TESTING\test1.robot">
 <test id="s1-t1" name="Pengetesan Login" line="14">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url_webtest}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231223 10:56:28.784" level="INFO">Opening browser 'chrome' to base url 'https://www.gramedia.com'.</msg>
-<status status="PASS" starttime="20231223 10:56:28.784" endtime="20231223 10:56:40.821"/>
+<msg timestamp="20231223 18:00:38.210" level="INFO">Opening browser 'chrome' to base url 'https://www.gramedia.com'.</msg>
+<status status="PASS" starttime="20231223 18:00:38.210" endtime="20231223 18:00:41.908"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231223 10:56:40.821" endtime="20231223 10:56:41.054"/>
+<status status="PASS" starttime="20231223 18:00:41.919" endtime="20231223 18:00:46.847"/>
 </kw>
 <kw name="Get Action Chain Delay" library="SeleniumLibrary">
 <doc>Gets the currently stored value for chain_delay_value in timestr format.</doc>
-<status status="PASS" starttime="20231223 10:56:41.054" endtime="20231223 10:56:41.062"/>
+<status status="PASS" starttime="20231223 18:00:46.847" endtime="20231223 18:00:46.847"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath://*[@id="login-button"]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231223 10:56:41.062" level="INFO">Clicking button 'xpath://*[@id="login-button"]/button'.</msg>
-<status status="PASS" starttime="20231223 10:56:41.062" endtime="20231223 10:56:41.619"/>
+<msg timestamp="20231223 18:00:46.847" level="INFO">Clicking button 'xpath://*[@id="login-button"]/button'.</msg>
+<status status="PASS" starttime="20231223 18:00:46.847" endtime="20231223 18:00:47.246"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=mat-input-0</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231223 10:56:41.619" level="INFO">Typing text 'putri@gmail.com' into text field 'id=mat-input-0'.</msg>
-<status status="PASS" starttime="20231223 10:56:41.619" endtime="20231223 10:56:43.395"/>
+<msg timestamp="20231223 18:00:47.246" level="INFO">Typing text 'putri@gmail.com' into text field 'id=mat-input-0'.</msg>
+<status status="PASS" starttime="20231223 18:00:47.246" endtime="20231223 18:00:47.799"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>id=mat-input-1</arg>
 <arg>${pass}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20231223 10:56:43.403" level="INFO">Typing password into text field 'id=mat-input-1'.</msg>
-<msg timestamp="20231223 10:56:43.559" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20231223 10:56:43.877" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20231223 10:56:43.395" endtime="20231223 10:56:43.877"/>
+<msg timestamp="20231223 18:00:47.799" level="INFO">Typing password into text field 'id=mat-input-1'.</msg>
+<msg timestamp="20231223 18:00:48.056" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231223 18:00:48.381" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231223 18:00:47.799" endtime="20231223 18:00:48.381"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath://*[@id="login-area"]/form/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231223 10:56:43.879" level="INFO">Clicking button 'xpath://*[@id="login-area"]/form/button'.</msg>
-<status status="PASS" starttime="20231223 10:56:43.879" endtime="20231223 10:56:44.176"/>
+<msg timestamp="20231223 18:00:48.384" level="INFO">Clicking button 'xpath://*[@id="login-area"]/form/button'.</msg>
+<status status="PASS" starttime="20231223 18:00:48.381" endtime="20231223 18:00:48.832"/>
 </kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>id=account-button</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20231223 10:56:44.176" endtime="20231223 10:56:47.119"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231223 18:00:53.833" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231223 18:00:48.832" endtime="20231223 18:00:53.833"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>title=Putri</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231223 10:56:47.119" level="INFO">Clicking element 'title=Putri'.</msg>
-<msg timestamp="20231223 10:56:47.514" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20231223 10:56:47.514" level="FAIL">Element with locator 'title=Putri' not found.</msg>
-<status status="FAIL" starttime="20231223 10:56:47.119" endtime="20231223 10:56:47.523"/>
-</kw>
-<status status="FAIL" starttime="20231223 10:56:28.784" endtime="20231223 10:56:47.523">Element with locator 'title=Putri' not found.</status>
+<status status="PASS" starttime="20231223 18:00:38.210" endtime="20231223 18:00:53.833"/>
 </test>
-<status status="FAIL" starttime="20231223 10:56:28.211" endtime="20231223 10:56:47.523"/>
+<test id="s1-t2" name="Pengetesan search bar" line="26">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_webtest}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 18:00:53.833" level="INFO">Opening browser 'chrome' to base url 'https://www.gramedia.com'.</msg>
+<status status="PASS" starttime="20231223 18:00:53.833" endtime="20231223 18:01:02.760"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231223 18:01:02.760" endtime="20231223 18:01:03.039"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=search</arg>
+<arg>Laut Bercerita</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 18:01:03.047" level="INFO">Typing text 'Laut Bercerita' into text field 'name=search'.</msg>
+<status status="PASS" starttime="20231223 18:01:03.047" endtime="20231223 18:01:03.777"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>name=search</arg>
+<arg>\RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231223 18:01:03.777" level="INFO">Sending key(s) ('RETURN',) to name=search element.</msg>
+<msg timestamp="20231223 18:01:04.356" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20231223 18:01:04.356" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20231223 18:01:03.777" endtime="20231223 18:01:04.974"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231223 18:01:09.974" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231223 18:01:04.974" endtime="20231223 18:01:09.974"/>
+</kw>
+<status status="PASS" starttime="20231223 18:00:53.833" endtime="20231223 18:01:09.974"/>
+</test>
+<status status="PASS" starttime="20231223 18:00:37.689" endtime="20231223 18:01:09.974"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test1">Test1</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
 </suite>
 </statistics>
 <errors>
